@@ -1,0 +1,9 @@
+author = DaKretMan, Dang Wang
+version = 0.01.2
+displayName = World of Meat
+homepage = https://forums.terraria.org/index.php?threads/world-of-meat.73377/
+hideCode = true
+hideResource = true
+includeSource = true
+buildIgnore = *.wip, *.csproj, *.user, bin\*, obj\*
+includePDB = true
