@@ -1,0 +1,25 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace WOM.Items.Armor
+{
+	[AutoloadEquip(EquipType.Body)]
+	public class ExterminatorBreastplate : ModItem
+	{
+		public override void SetStaticDefaults()
+		{
+			base.SetStaticDefaults();
+			DisplayName.SetDefault("Exterminator Breastplate");
+		}
+
+		public override void SetDefaults()
+		{
+			item.width = 18;
+			item.height = 18;
+			item.value = 10000;
+			item.rare = 2;
+			item.defense = 60;
+		}
+	}
+}

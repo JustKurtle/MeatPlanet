@@ -1,0 +1,34 @@
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace WOM.Items.Weapons.Ranged
+{
+    public class LightbulbCannon : ModItem
+    {
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Lightbulb Cannon");
+        }
+        public override void SetDefaults()
+        {
+            item.useStyle = 5;
+            item.autoReuse = true;
+            item.useAnimation = 46;
+            item.useTime = 46;
+            item.width = 68;
+            item.height = 36;
+            item.shoot = mod.ProjectileType("Lightbulb");
+            item.useAmmo = mod.ItemType("Lightbulb");
+            item.UseSound = SoundID.Item67; //Grenade Launcher sound
+            item.damage = 27;
+            item.shootSpeed = 12f;
+            item.noMelee = true;
+            item.value = 0;
+            item.rare = 3;
+            item.knockBack = 5f;
+            item.ranged = true;
+        }
+    }
+}
