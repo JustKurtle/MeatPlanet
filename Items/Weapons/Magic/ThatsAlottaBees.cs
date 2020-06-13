@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Magic
+namespace MeatPlanet.Items.Weapons.Magic
 {
 	public class ThatsAlottaBees : ModItem
 	{

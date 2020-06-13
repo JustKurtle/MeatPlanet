@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Melee
+namespace MeatPlanet.Items.Weapons.Melee
 {
     public class TheFinger : ModItem
     {

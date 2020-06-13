@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Throwing
+namespace MeatPlanet.Items.Weapons.Throwing
 {
 	public class Bouncything : ModItem
 	{

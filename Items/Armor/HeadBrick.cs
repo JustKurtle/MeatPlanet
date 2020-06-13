@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Armor
+namespace MeatPlanet.Items.Armor
 {
 	[AutoloadEquip(EquipType.Head)]
 	public class HeadBrick : ModItem

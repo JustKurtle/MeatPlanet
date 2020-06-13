@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WOM.Items.Weapons.Melee
+namespace MeatPlanet.Items.Weapons.Melee
 {
     class Chromosome
     {

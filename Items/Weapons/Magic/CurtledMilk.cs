@@ -2,14 +2,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Magic
+namespace MeatPlanet.Items.Weapons.Magic
 {
 	public class CurtledMilk : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Curtled Milk");
-			Tooltip.SetDefault("A WOM dev weapon! Got milk?");
+			Tooltip.SetDefault("A MeatPlanet dev weapon! Got milk?");
 		}
 
 		public override void SetDefaults()

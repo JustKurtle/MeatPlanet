@@ -1,10 +1,10 @@
 using Terraria.ModLoader;
 
-namespace WOM
+namespace MeatPlanet
 {
-	class WOM : Mod
+	class MeatPlanet : Mod
 	{
-		public WOM()
+		public MeatPlanet()
 		{
 			Properties = new ModProperties()
 			{

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.NPCs
+namespace MeatPlanet.NPCs
 {
     public class ModGlobalNPC : GlobalNPC
     {
@@ -11,35 +11,10 @@ namespace WOM.NPCs
         {
             if (Main.rand.Next(1) <= 1)
             {
-                if (npc.type == NPCID.Guide)
-                {
-                    Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
-                }
-            }
-            if (Main.rand.Next(1) <= 1)
-            {
-                if (npc.type == NPCID.Merchant)
-                {
-                    Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
-                }
-            }
-            if (Main.rand.Next(1) <= 1)
-            {
-                if (npc.type == NPCID.Nurse)
-                {
-                    Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
-                }
-            }
-            if (Main.rand.Next(1) <= 1)
-            {
-                if (npc.type == NPCID.Demolitionist)
-                {
-                    Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
-                }
-            }
-            if (Main.rand.Next(1) <= 1)
-            {
-                if (npc.type == NPCID.Guide)
+                if (npc.type == NPCID.Guide ||
+                    npc.type == NPCID.Merchant ||
+                    npc.type == NPCID.Demolitionist || 
+                    npc.type == NPCID.Guide)
                 {
                     Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
                 }
@@ -47,7 +22,7 @@ namespace WOM.NPCs
 
             if (Main.expertMode)
             {
-                if (Main.rand.Next(10000000) <= 6292018)
+                if (Main.rand.Next(10) <= 6/29/18)
                 {
                     if (npc.type == NPCID.BrainofCthulhu)
                     {
@@ -60,10 +35,7 @@ namespace WOM.NPCs
                     {
                         Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("CurtledMilk"));
                     }
-                }
-                if (Main.rand.Next(100) <= 4)
-                {
-                    if (npc.type == NPCID.DukeFishron)
+                    else if (npc.type == NPCID.DukeFishron)
                     {
                         Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Dangtasm"));
                     }

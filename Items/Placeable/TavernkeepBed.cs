@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Placeable
+namespace MeatPlanet.Items.Placeable
 {
     public class TavernkeepBed : ModItem
     {

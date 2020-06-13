@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace WOM.Walls
+namespace MeatPlanet.Walls
 {
     public class OnionWall : ModWall
     {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
  
-namespace WOM.NPCs
+namespace MeatPlanet.NPCs
 {
     public class VanillaNPCShop : GlobalNPC
     {
@@ -23,12 +23,7 @@ namespace WOM.NPCs
                         shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
                         nextSlot++;
                     }
- 
-                    break;
-            }
 
-            switch (type)
-            {
                 case NPCID.Merchant:
  
                     if (Main.hardMode)
@@ -43,6 +38,7 @@ namespace WOM.NPCs
                     }
  
                     break;
+                }
             }
         }
     }

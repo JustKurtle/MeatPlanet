@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Ranged
+namespace MeatPlanet.Items.Weapons.Ranged
 {
     public class Testweapon : ModItem
     {
