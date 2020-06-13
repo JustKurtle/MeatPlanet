@@ -1,9 +1,9 @@
-﻿using WOM.NPCs;
+﻿using MeatPlanet.NPCs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Buffs.Negative
+namespace MeatPlanet.Buffs.Not
 {
     public class BadAtComputer : ModBuff
     {

@@ -3,13 +3,13 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Magic
+namespace MeatPlanet.Items.Weapons.Magic
 {
     public class BrickStorm : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Brick Storm");
+            DisplayName.SetDefault("Brick on a Stick");
             Tooltip.SetDefault("Where are they coming from?");
         }
 

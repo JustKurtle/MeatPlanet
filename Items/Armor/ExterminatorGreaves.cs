@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Armor
+namespace MeatPlanet.Items.Armor
 {
     [AutoloadEquip(EquipType.Legs)]
     public class ExterminatorGreaves : ModItem

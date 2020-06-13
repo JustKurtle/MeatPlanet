@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
  
-namespace WOM.Projectiles
+namespace MeatPlanet.Projectiles
 {
     public class MagicHammer : ModProjectile
     {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Banners
+namespace MeatPlanet.Items.Banners
 {
     public class BottoBanner : ModItem
     {

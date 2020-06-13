@@ -3,13 +3,13 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Weapons.Magic
+namespace MeatPlanet.Items.Weapons.Magic
 {
     public class Beef : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Beef :)");
+            DisplayName.SetDefault("\"Beef\" :)");
             Tooltip.SetDefault("Beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef");
         }
 

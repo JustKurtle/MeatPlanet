@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace WOM.Tiles
+namespace MeatPlanet.Tiles
 {
     public class TavernkeepBar : ModTile
     {

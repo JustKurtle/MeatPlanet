@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Banners
+namespace MeatPlanet.Items.Banners
 {
     public class DocBanner : ModItem
     {

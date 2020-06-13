@@ -3,14 +3,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WOM.Items.Materials
+namespace MeatPlanet.Items.Materials
 {
-    public class RefinedStick : ModItem
+    public class Stick : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Refined Stick");
-            Tooltip.SetDefault("A refined stick. Some may call it a rod.");
+            DisplayName.SetDefault("Stick");
+            Tooltip.SetDefault("This is stick. That is all.");
         }
         public override void SetDefaults()
         {
@@ -22,8 +22,8 @@ namespace WOM.Items.Materials
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("Stick"), 1);
-            recipe.AddTile(TileID.SharpeningStation);
+            recipe.AddIngredient(ItemID.Wood, 1);
+            recipe.AddTile(TileID.WorkBenches);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

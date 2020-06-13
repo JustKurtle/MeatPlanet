@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace WOM.Items.Placeable
+namespace MeatPlanet.Items.Placeable
 {
     public class TavernkeepPainting : ModItem
     {
