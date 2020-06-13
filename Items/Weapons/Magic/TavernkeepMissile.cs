@@ -11,6 +11,7 @@ namespace MeatPlanet.Items.Weapons.Magic
         {
             DisplayName.SetDefault("Tavernkeep Missile");
             Tooltip.SetDefault("It's a bird! It's a plane! It's the Tavernkeep! \n No. \n It's god.");
+            // Imagine being fisted by God;
         }
 
         public override void SetDefaults()
