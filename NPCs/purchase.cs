@@ -23,10 +23,7 @@ namespace MeatPlanet.NPCs
                         shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
                         nextSlot++;
                     }
-<<<<<<< HEAD
                     break;
-=======
->>>>>>> 38f38c3283779591317eaacb1b805a9c9328d2a0
 
                 case NPCID.Merchant:
                     if (Main.hardMode)
@@ -40,7 +37,6 @@ namespace MeatPlanet.NPCs
                         nextSlot++;
                     }
                     break;
-                }
             }
         }
     }

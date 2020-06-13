@@ -5,9 +5,5 @@ homepage = https://forums.terraria.org/index.php?threads/world-of-meat.73377/
 hideCode = false
 hideResource = false
 includeSource = true
-<<<<<<< HEAD
 buildIgnore = _wip\*, *.csproj, *.user, bin\*, obj\*
-=======
-buildIgnore = wip\*, *.csproj, *.user, bin\*, obj\*
->>>>>>> 38f38c3283779591317eaacb1b805a9c9328d2a0
 includePDB = true

@@ -16,17 +16,18 @@ namespace MeatPlanet.Items.Weapons.Melee
         {
             item.damage = 30;
             item.melee = true;
-            item.width = 52;
-            item.height = 52;
-            item.useTime = 27;
-            item.useAnimation = 27;
-            item.useStyle = 1;
+            item.width = 21;
+            item.height = 21;
+            item.useTime = 16;
+            item.useAnimation = 16;
+            item.useStyle = 3;
+            item.scale = 2;
             item.knockBack = 7;
-            item.value = Item.sellPrice(0, 4, 0, 0);
+            item.value = Item.sellPrice(0, 6, 0, 0);
             item.rare = 4;
             item.UseSound = SoundID.Item1;
             item.autoReuse = false;
-            item.shoot = 181;
+            item.shoot = ProjectileID.Bee;
             item.shootSpeed = 1f;
         }
         public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
@@ -37,7 +38,7 @@ namespace MeatPlanet.Items.Weapons.Melee
 			for (int i = 0; i < numberProjectiles; i++)
 			{
 				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * .2f;
-				Projectile.NewProjectile(position.X - 100, position.Y - 10, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
+				Projectile.NewProjectile(player.position.X, player.position.Y + 20, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
 			}
 			return false;
 		}
