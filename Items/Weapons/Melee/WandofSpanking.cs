@@ -14,9 +14,9 @@ namespace MeatPlanet.Items.Weapons.Melee
 
         public override void SetDefaults()
         {
-            item.damage = 50;
+            item.damage = 37; //Reduced to 37 from 50. Once you get the Slap Hand, there's nothing making this hard to get.
             item.crit = item.crit + 0;
-            item.melee = true;
+            item.melee = true; //Is there a way we can make this cost mana to use, like the Wand of Sparking?
             item.width = 58;
             item.height = 62;
             item.useTime = 35;

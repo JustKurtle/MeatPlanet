@@ -15,7 +15,7 @@ namespace MeatPlanet.Items.Weapons.Ranged
         {
             item.useStyle = 5;
             item.crit = item.crit + 0;
-            item.autoReuse = true;
+            item.autoReuse = false; //Removed autofire
             item.useAnimation = 25;
             item.useTime = 25;
             item.width = 14;

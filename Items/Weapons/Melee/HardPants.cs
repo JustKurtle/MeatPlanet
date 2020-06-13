@@ -19,8 +19,8 @@ namespace MeatPlanet.Items.Weapons.Melee
             item.autoReuse = false;
             item.width = 90;
             item.height = 90;
-            item.useTime = 20;
-            item.useAnimation = 20;
+            item.useTime = 30; //Raised to 30 from 20. Aiming for 220-280 DPS
+            item.useAnimation = 30; //Raised from 20 to match above.
             item.useStyle = 1;
             item.knockBack = 4;
             item.value = Item.sellPrice(0, 2, 50, 0);

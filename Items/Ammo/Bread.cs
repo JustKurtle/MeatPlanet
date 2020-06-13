@@ -10,12 +10,12 @@ namespace MeatPlanet.Items.Ammo
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Bread");
-            Tooltip.SetDefault("Operah loves it!");
+            Tooltip.SetDefault("Oprah loves it!"); //I fucking misspelle Oprah as Operah. Fuck me, man.
         }
 
         public override void SetDefaults()
         {
-            item.damage = 8;
+            item.damage = 7; //Damage lowered from 8 to 7
             item.ranged = true;
             item.width = 28;
             item.height = 23;

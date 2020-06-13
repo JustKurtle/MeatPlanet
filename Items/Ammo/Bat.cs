@@ -27,12 +27,12 @@ namespace MeatPlanet.Items.Ammo
         }
         
         public override void AddRecipes()
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(mod.ItemType("RefinedStick"), 1);
-            recipe.AddTile(TileID.SharpeningStation);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-        }   
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.Wood, 2); //Was originally refined stick. The refined stick sucks
+			recipe.AddTile(TileID.WorkBenches); //Was originally sharpening station. Maybe it should be the sawmill?
+			recipe.SetResult(this, 5);
+			recipe.AddRecipe();
+		}  
     }
 }

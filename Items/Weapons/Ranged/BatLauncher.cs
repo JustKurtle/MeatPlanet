@@ -14,7 +14,7 @@ namespace MeatPlanet.Items.Weapons.Ranged
         public override void SetDefaults()
         {
             item.useStyle = 5;
-            item.autoReuse = true;
+            item.autoReuse = false; //Was initially true. I think that makes it a bit too easy to use.
             item.useAnimation = 33;
             item.useTime = 33;
             item.width = 68;

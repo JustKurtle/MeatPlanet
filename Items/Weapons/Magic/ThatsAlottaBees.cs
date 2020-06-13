@@ -25,7 +25,7 @@ namespace MeatPlanet.Items.Weapons.Magic
 			item.useAnimation = 12;
 			item.useStyle = 5;
 			item.knockBack = 1;
-			item.value = Item.sellPrice(0, 4, 0, 0);
+			item.value = Item.sellPrice(0, 3, 29, 0); //Originally 4 gold 
 			item.rare = 4;
             item.shoot = mod.ProjectileType("MagicBee");
             item.shootSpeed = 20f;
