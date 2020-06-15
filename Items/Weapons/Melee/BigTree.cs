@@ -14,7 +14,7 @@ namespace MeatPlanet.Items.Weapons.Melee
 
         public override void SetDefaults()
         {
-            item.damage = 888;
+            item.damage = 888; //I thought I nerfed this bitch
             item.melee = true;
             item.width = 98;
             item.height = 98;

@@ -18,14 +18,14 @@ namespace MeatPlanet.Items.Weapons.Ranged
             item.crit = item.crit + 0;
             item.autoReuse = true;
             item.useAnimation = 36;
-            item.useTime = 36;
+            item.useTime = 36; //Was 36. Lowered to 20? idk how this will work
             item.width = 68;
             item.height = 36;
             item.shoot = 1;
             item.useAmmo = AmmoID.Arrow;
             item.UseSound = SoundID.Item11;
             item.damage = 45;
-            item.shootSpeed = 15f;
+            item.shootSpeed = 20f; //Was 15f. It's a gun, so I think it should shoot projectiles at near-gun velocities... how fast do guns shoot projectiles?
             item.noMelee = true;
             item.value = Item.sellPrice(0, 2, 50, 0);
             item.rare = 5;

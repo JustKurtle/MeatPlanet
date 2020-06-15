@@ -15,9 +15,9 @@ namespace MeatPlanet.Items.Weapons.Magic
 
         public override void SetDefaults()
         {
-            item.damage = 24;
+            item.damage = 9; //was originally 24. I want some the DPS to be a bit higher than the Vilethorn
             item.magic = true;
-            item.mana = 3;
+            item.mana = 7; //Increased from 3 to 7
             item.melee = false;
             item.width = 28;
             item.height = 30;
@@ -28,7 +28,7 @@ namespace MeatPlanet.Items.Weapons.Magic
             item.value = 0;
             item.rare = 3;
             item.shoot = mod.ProjectileType("Purple");
-            item.shootSpeed = 25f;
+            item.shootSpeed = 10f; //Was originally 25f. Lowered to 10f.
             item.UseSound = SoundID.Item9;
             item.autoReuse = true;
         }

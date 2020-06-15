@@ -24,7 +24,7 @@ namespace MeatPlanet.Projectiles
             projectile.hostile = false;
             projectile.magic = true;
             projectile.penetrate = 1;
-            projectile.timeLeft = 600;
+            projectile.timeLeft = 30; //Was originally 600, which I think is 10 seconds?? I think 30 is half a second, which I want because it flies completely straight.
             projectile.alpha = (int)byte.MaxValue;
             projectile.light = 0f;
             projectile.ignoreWater = true;
