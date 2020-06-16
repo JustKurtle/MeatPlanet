@@ -33,11 +33,8 @@ namespace WorldOfMeat.Items.Weapons.Ranged
 
     public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
     {
-      float numberProjectiles = 2;
-      for (int i = 0; i < numberProjectiles; i++)
-      {
-        Projectile.NewProjectile(position.X, position.Y + ((i - numberProjectiles / 2) * 10), speedX, speedY, 469, damage, knockBack, player.whoAmI);
-      }
+      Projectile.NewProjectile(position.X, position.Y, speedX, speedY, type, damage, knockBack, player.whoAmI);
+      Projectile.NewProjectile(position.X, position.Y, speedX, speedY, ProjectileID.BeeArrow, damage, knockBack, player.whoAmI);
       return true;
     }
 
