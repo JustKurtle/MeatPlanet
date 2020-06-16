@@ -20,7 +20,7 @@ namespace MeatPlanet.Items.Weapons.Melee
 			item.height = 52;
 			item.useTime = 18;
 			item.useAnimation = 18;
-			item.crit = item.crit + 0;
+			item.crit = 0;
 			item.useStyle = 3;
 			item.knockBack = 15f;
 			item.value = Item.sellPrice(0, 0, 1, 45);

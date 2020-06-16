@@ -2,42 +2,42 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
- 
+
 namespace MeatPlanet.NPCs
 {
-    public class VanillaNPCShop : GlobalNPC
+  public class VanillaNPCShop : GlobalNPC
+  {
+    public override void SetupShop(int type, Chest shop, ref int nextSlot)
     {
-        public override void SetupShop(int type, Chest shop, ref int nextSlot)
-        {
-            switch (type)
-            {
-                case NPCID.PartyGirl:
- 
-                    if (Main.hardMode)
-                    {
-                        shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
-                        nextSlot++;
-                    }
-                    else
-                    {
-                        shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
-                        nextSlot++;
-                    }
-                    break;
+      switch (type)
+      {
+        case NPCID.PartyGirl:
 
-                case NPCID.Merchant:
-                    if (Main.hardMode)
-                    {
-                        shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
-                        nextSlot++;
-                    }
-                    else
-                    {
-                        shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
-                        nextSlot++;
-                    }
-                    break;
-            }
-        }
+          if (Main.hardMode)
+          {
+              shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
+              nextSlot++;
+          }
+          else
+          {
+              shop.item[nextSlot].SetDefaults(mod.ItemType("BeachBallGun"));
+              nextSlot++;
+          }
+          break;
+
+        case NPCID.Merchant:
+          if (Main.hardMode)
+          {
+              shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
+              nextSlot++;
+          }
+          else
+          {
+              shop.item[nextSlot].SetDefaults(mod.ItemType("Bread"));
+              nextSlot++;
+          }
+          break;
+      }
     }
+  }
 }

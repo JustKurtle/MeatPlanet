@@ -14,22 +14,25 @@ namespace MeatPlanet.Items.Weapons.Melee
 
     public override void SetDefaults()
     {
-      item.damage = 30;
-      item.melee = true;
       item.width = 21;
       item.height = 21;
+      item.scale = 2;
+
+      item.damage = 30;
+      item.melee = true;
       item.useTime = 16;
       item.useAnimation = 16;
       item.useStyle = 3;
-      item.scale = 2;
       item.knockBack = 7;
-      item.value = Item.sellPrice(0, 6, 0, 0);
-      item.rare = 4;
       item.UseSound = SoundID.Item1;
       item.autoReuse = false;
       item.shoot = ProjectileID.Bee;
       item.shootSpeed = 1f;
+
+      item.value = Item.sellPrice(0, 6, 0, 0);
+      item.rare = 4;
     }
+
     public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
 		{
 			float numberProjectiles = 5;

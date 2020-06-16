@@ -1,4 +1,4 @@
-author = DaKretMan, Dang Wang
+author = Kurtle, Dang Wang
 version = 0.01.2
 displayName = World of Meat
 homepage = https://forums.terraria.org/index.php?threads/world-of-meat.73377/
