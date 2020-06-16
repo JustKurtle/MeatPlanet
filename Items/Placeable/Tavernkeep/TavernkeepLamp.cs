@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WorldOfMeat.Items.Placeable
+namespace WorldOfMeat.Items.Placeable.Tavernkeep
 {
     internal class TavernkeepLamp : ModItem
     {

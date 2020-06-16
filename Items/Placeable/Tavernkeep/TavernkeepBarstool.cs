@@ -1,19 +1,19 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace WorldOfMeat.Items.Placeable
+namespace WorldOfMeat.Items.Placeable.Tavernkeep
 {
-    public class TavernkeepBar : ModItem
+    public class TavernkeepBarstool : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("This is a normal.");
+            Tooltip.SetDefault("Normal chair.");
         }
 
         public override void SetDefaults()
         {
-            item.width = 26;
-            item.height = 22;
+            item.width = 12;
+            item.height = 24;
             item.maxStack = 99;
             item.useTurn = true;
             item.autoReuse = true;
@@ -21,8 +21,8 @@ namespace WorldOfMeat.Items.Placeable
             item.useTime = 10;
             item.useStyle = 1;
             item.consumable = true;
-            item.value = 500;
-            item.createTile = mod.TileType("TavernkeepBar");
+            item.value = 150;
+            item.createTile = mod.TileType("TavernkeepBarstool");
         }
     }
 }
