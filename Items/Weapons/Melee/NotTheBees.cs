@@ -10,47 +10,36 @@ namespace MeatPlanet.Items.Weapons.Melee
     public override void SetStaticDefaults()
     {
       DisplayName.SetDefault("Not the Bees");
+      Tooltip.SetDefault("There can never bee enough bee items!");
     }
 
     public override void SetDefaults()
     {
-      item.width = 21;
-      item.height = 21;
+      item.width = 31;
+      item.height = 31; // set the scale to 2x so it looks the correct size
       item.scale = 2;
 
-      item.damage = 30;
+      item.damage = 20;
       item.melee = true;
-      item.useTime = 16;
-      item.useAnimation = 16;
-      item.useStyle = 3;
+      item.useTime = 21; // upped use time so it is more on point with the BreakerBlade, haven't tested it yet
+      item.useAnimation = 21;
+      item.useStyle = 1;
       item.knockBack = 7;
       item.UseSound = SoundID.Item1;
-      item.autoReuse = false;
-      item.shoot = ProjectileID.Bee;
-      item.shootSpeed = 1f;
+      item.autoReuse = true;
+      item.shoot = ProjectileID.BeeArrow;
+      item.shootSpeed = 14f; // the arrows were incredibly slow upped from 1f
 
       item.value = Item.sellPrice(0, 6, 0, 0);
       item.rare = 4;
     }
-
-    public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
-		{
-			float numberProjectiles = 5;
-			float rotation = MathHelper.ToRadians(15);
-			position += Vector2.Normalize(new Vector2(speedX, speedY)) * 45f;
-			for (int i = 0; i < numberProjectiles; i++)
-			{
-				Vector2 perturbedSpeed = new Vector2(speedX, speedY).RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * .2f;
-				Projectile.NewProjectile(player.position.X, player.position.Y + 20, perturbedSpeed.X, perturbedSpeed.Y, type, damage, knockBack, player.whoAmI);
-			}
-			return false;
-		}
 
     public override void AddRecipes()
     {
       ModRecipe recipe = new ModRecipe(mod);
       recipe.AddIngredient(ItemID.BreakerBlade, 1);
       recipe.AddIngredient(ItemID.BeeKeeper, 1);
+      recipe.AddIngredient(ItemID.HoneyBottle, 20);
       recipe.AddTile(TileID.TinkerersWorkbench);
       recipe.SetResult(this);
       recipe.AddRecipe();
