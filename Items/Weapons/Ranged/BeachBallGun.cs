@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Weapons.Ranged
+namespace WorldOfMeat.Items.Weapons.Ranged
 {
     public class BeachBallGun : ModItem
     {

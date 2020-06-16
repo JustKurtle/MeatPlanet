@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Placeable
+namespace WorldOfMeat.Items.Placeable
 {
     public class TavernkeepBarstool : ModItem
     {

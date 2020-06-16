@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Weapons.Melee
+namespace WorldOfMeat.Items.Weapons.Melee
 {
 	public class LightbulbOnAStick : ModItem
 	{

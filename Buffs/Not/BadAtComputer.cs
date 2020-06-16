@@ -1,9 +1,9 @@
-﻿using MeatPlanet.NPCs;
+﻿using WorldOfMeat.NPCs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Buffs.Not
+namespace WorldOfMeat.Buffs.Not
 {
     public class BadAtComputer : ModBuff
     {

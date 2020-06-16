@@ -2,14 +2,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Weapons.Ranged
+namespace WorldOfMeat.Items.Weapons.Ranged
 {
 	public class Dangtasm : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Dangtasm");
-			Tooltip.SetDefault("A MeatPlanet dev weapon! Lechuga! (that means \"never give up\" in Spanish)");
+			Tooltip.SetDefault("A WorldOfMeat dev weapon! Lechuga! (that means \"never give up\" in Spanish)");
 		}
 
 		public override void SetDefaults()

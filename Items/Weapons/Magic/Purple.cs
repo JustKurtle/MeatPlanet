@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Weapons.Magic
+namespace WorldOfMeat.Items.Weapons.Magic
 {
     public class Purple : ModItem
     {

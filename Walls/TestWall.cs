@@ -2,7 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Walls
+namespace WorldOfMeat.Walls
 {
     public class TestWall : ModWall
     {

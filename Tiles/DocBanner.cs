@@ -7,7 +7,7 @@ using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace MeatPlanet.Tiles
+namespace WorldOfMeat.Tiles
 {
     public class DocBanner : ModTile
     {

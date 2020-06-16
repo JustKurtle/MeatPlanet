@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.NPCs
+namespace WorldOfMeat.NPCs
 {
     public class Botto : ModNPC
     {

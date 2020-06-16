@@ -7,7 +7,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace MeatPlanet.Tiles
+namespace WorldOfMeat.Tiles
 {
     // This class shows off many things common to Lamp tiles in Terraria. The process for creating this example is detailed in: https://github.com/blushiemagic/tModLoader/wiki/Advanced-Vanilla-Code-Adaption#examplelamp-tile
     // If you can't figure out how to recreate a vanilla tile, see that guide for instructions on how to figure it out yourself.

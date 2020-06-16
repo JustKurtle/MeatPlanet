@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Projectiles
+namespace WorldOfMeat.Projectiles
 {
 	public class Brick : ModProjectile
 	{

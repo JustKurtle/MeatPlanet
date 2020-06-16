@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace MeatPlanet.Tiles
+namespace WorldOfMeat.Tiles
 {
     public class TavernkeepPainting : ModTile
     {

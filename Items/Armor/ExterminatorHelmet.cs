@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Armor
+namespace WorldOfMeat.Items.Armor
 {
     [AutoloadEquip(EquipType.Head)]
     public class ExterminatorHelmet : ModItem

@@ -1,10 +1,10 @@
 using Terraria.ModLoader;
 
-namespace MeatPlanet
+namespace WorldOfMeat
 {
-	class MeatPlanet : Mod
+	class WorldOfMeat : Mod
 	{
-		public MeatPlanet()
+		public WorldOfMeat()
 		{
 			Properties = new ModProperties()
 			{

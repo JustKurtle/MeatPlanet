@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Ammo
+namespace WorldOfMeat.Items.Ammo
 {
     public class LagArrow : ModItem
     {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Materials
+namespace WorldOfMeat.Items.Materials
 {
     public class Stick : ModItem
     {

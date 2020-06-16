@@ -1,6 +1,6 @@
 ﻿using Terraria.ModLoader;
 
-namespace MeatPlanet.Items.Placeable
+namespace WorldOfMeat.Items.Placeable
 {
     public class OnionWall : ModItem
     {

@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace MeatPlanet.Tiles
+namespace WorldOfMeat.Tiles
 {
     public class TavernkeepBed : ModTile
     {
