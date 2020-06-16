@@ -37,7 +37,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
             recipe.AddIngredient(ItemID.WandofSparking, 1);
             recipe.AddIngredient(ItemID.SlapHand, 1);
             recipe.AddIngredient(mod.ItemType("DuctTape"), 1);
-            recipe.AddTile(TileID.TinkerersWorkbench);
+            recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();
         }

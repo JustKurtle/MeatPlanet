@@ -14,7 +14,7 @@ namespace WorldOfMeat.NPCs
           npc.type == NPCID.Demolitionist ||
           npc.type == NPCID.Guide)
       {
-        Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"));
+        Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"), main.rand(2)+1);
       }
 
       if (Main.expertMode)
@@ -42,10 +42,17 @@ namespace WorldOfMeat.NPCs
         }
       }
 
-      if (Main.hardMode)
+      if (Main.hardMode) //.5% from prehardmode bats, 1% from hardmode bats, 2% from lava bats and vampires
       {
-        if ((Main.rand.Next(20) <= 1 && npc.type == NPCID.Lavabat) ||
-            (Main.rand.Next(100) <= 1 && npc.type == NPCID.Hellbat))
+        if ((Main.rand.Next(50) <= 1 && npc.type == NPCID.Lavabat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.Hellbat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.CaveBat) ||
+            (Main.rand.Next(100) <= 1 && npc.type == NPCID.GiantBat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IlluminantBat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IceBat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.JungleBat) ||
+            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IceBat) ||
+            (Main.rand.Next(50) <= 1 && npc.type == NPCID.Vampire))
         {
           Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BatLauncher"));
         }

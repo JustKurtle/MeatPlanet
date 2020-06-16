@@ -31,6 +31,7 @@ namespace WorldOfMeat.Items.Weapons.Magic
             item.shootSpeed = 10f; //Was originally 25f. Lowered to 10f.
             item.UseSound = SoundID.Item9;
             item.autoReuse = true;
+            item.value = Item.buyPrice(0, 1, 75, 0);
         }
     }
 }

@@ -23,7 +23,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
             item.useAnimation = 30; //Raised from 20 to match above.
             item.useStyle = 1;
             item.knockBack = 4;
-            item.value = Item.sellPrice(0, 2, 50, 0);
+            item.value = Item.sellPrice(0, 5, 54, 0); //Changed from like 2 gold 50 silver to 5 gold 54 silver
             item.rare = 5;
             item.UseSound = SoundID.Item1;
         }

@@ -14,12 +14,12 @@ namespace WorldOfMeat.Items.Weapons.Melee
         }
         public override void SetDefaults()
         {
-            item.damage = 20;
+            item.damage = 5; //Changed to 5 from 20
             item.melee = true;
             item.width = 28;
             item.height = 48;
-            item.useTime = 11;
-            item.useAnimation = 11;
+            item.useTime = 20; //Increased from 11 to 20
+            item.useAnimation = 20;
             item.useStyle = 1;
             item.knockBack = 7;
             item.value = 0;
