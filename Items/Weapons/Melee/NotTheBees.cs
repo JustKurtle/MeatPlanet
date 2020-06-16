@@ -39,7 +39,6 @@ namespace MeatPlanet.Items.Weapons.Melee
       ModRecipe recipe = new ModRecipe(mod);
       recipe.AddIngredient(ItemID.BreakerBlade, 1);
       recipe.AddIngredient(ItemID.BeeKeeper, 1);
-      recipe.AddIngredient(ItemID.HoneyBottle, 20);
       recipe.AddTile(TileID.TinkerersWorkbench);
       recipe.SetResult(this);
       recipe.AddRecipe();
