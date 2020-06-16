@@ -10,7 +10,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
     public override void SetStaticDefaults()
     {
       DisplayName.SetDefault("Not the Bees");
-      Tooltip.SetDefault("Holy fucking shit."); // i like this one better
+      Tooltip.SetDefault("Yolo, swag bitches."); // i like this one better
     }
 
     public override void SetDefaults()
@@ -19,10 +19,10 @@ namespace WorldOfMeat.Items.Weapons.Melee
       item.height = 31; // set the scale to 2x so it looks the correct size
       item.scale = 2;
 
-      item.damage = 17;
+      item.damage = 24;
       item.melee = true;
-      item.useTime = 24; // upped use time so it is more on point with the BreakerBlade, haven't tested it yet
-      item.useAnimation = 24;
+      item.useTime = 21; // upped use time so it is more on point with the BreakerBlade
+      item.useAnimation = 21;
       item.useStyle = 1;
       item.knockBack = 7;
       item.UseSound = SoundID.Item1;

@@ -44,7 +44,8 @@ namespace WorldOfMeat.NPCs
 
       if (Main.hardMode)
       {
-        if ((Main.rand.Next(20) <= 1 && npc.type == NPCID.Lavabat) || (Main.rand.Next(100) <= 1 && npc.type == NPCID.Hellbat))
+        if ((Main.rand.Next(20) <= 1 && npc.type == NPCID.Lavabat) ||
+            (Main.rand.Next(100) <= 1 && npc.type == NPCID.Hellbat))
         {
           Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BatLauncher"));
         }
