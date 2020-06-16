@@ -23,15 +23,15 @@ namespace MeatPlanet.Items.Weapons.Melee
             item.useTime = 27;
             item.useAnimation = 27;
             item.useStyle = 1;
-            item.knockBack = 8;
-            item.value = Item.sellPrice(0, 5, 0, 0);
+            item.knockBack = 10;
+            item.value = Item.sellPrice(0, 3, 34, 0);
             item.rare = 4;
             item.UseSound = SoundID.Item1;
         }
         public override Vector2? HoldoutOffset()
 		{
 			return new Vector2(100, 1000);
-		
+
         }
         public override void AddRecipes()
         {

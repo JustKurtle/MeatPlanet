@@ -16,14 +16,14 @@ namespace MeatPlanet.Items.Weapons.Melee
         {
             item.damage = 55;
             item.melee = true;
-            item.autoReuse = false;
+            item.autoReuse = true;
             item.width = 90;
             item.height = 90;
-            item.useTime = 24;
-            item.useAnimation = 24;
+            item.useTime = 20;
+            item.useAnimation = 20;
             item.useStyle = 1;
             item.knockBack = 5;
-            item.value = Item.sellPrice(0, 5, 0, 0);
+            item.value = Item.sellPrice(0, 3, 34, 0);
             item.rare = 4;
             item.UseSound = SoundID.Item1;
         }
