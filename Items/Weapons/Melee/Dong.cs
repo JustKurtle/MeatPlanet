@@ -23,7 +23,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
 			item.useAnimation = 35;
 			item.useStyle = 1;
 			item.knockBack = 15f;
-			item.value = Item.sellPrice(0, 0, 60, 0);
+			item.value = Item.sellPrice(0, 1, 65, 0); //was originally 60 silver. Changed to 1 gold 65 silver.
 			item.rare = 10;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
@@ -34,6 +34,8 @@ namespace WorldOfMeat.Items.Weapons.Melee
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.Bell, 1);
             recipe.AddIngredient(ItemID.Wood, 10);
+						recipe.AddIngredient(ItemID.PixieDust, 15); //Added Pixie Dust and Souls of Light so it's not so easy to get
+						recipe.AddIngredient(ItemID.SoulofLight, 5);
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

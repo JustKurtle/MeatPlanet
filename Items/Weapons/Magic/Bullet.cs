@@ -25,7 +25,7 @@ namespace WorldOfMeat.Items.Weapons.Magic
             item.useAnimation = 9;
             item.useStyle = 5;
             item.knockBack = 2.5f;
-            item.value = Item.buyPrice(0, 1, 0, 0);
+            item.value = Item.buyPrice(0, 1, 75, 0); //Added 75 silver
             item.rare = 2;
             item.shoot = mod.ProjectileType("Handgun");
             item.shootSpeed = 10f;

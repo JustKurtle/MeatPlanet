@@ -12,7 +12,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
       DisplayName.SetDefault("Bana-knife");
       Tooltip.SetDefault("Don't come to lunch tomorrow.");
     }
-    
+
     public override void SetDefaults()
     {
       item.damage = 19;
@@ -24,7 +24,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
       item.crit = 0;
       item.useStyle = 3;
       item.knockBack = 15f;
-      item.value = Item.sellPrice(0, 0, 1, 45);
+      item.value = Item.sellPrice(0, 0, 43, 0); //Why is it 1 silver, 45 copper?? Chagned to 43 silver I guess lol
       item.rare = 10;
       item.UseSound = SoundID.Item1;
       item.autoReuse = true;
