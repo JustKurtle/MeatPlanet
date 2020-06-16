@@ -17,7 +17,7 @@ namespace WorldOfMeat.Items.Weapons.Magic
         {
             item.damage = 9; //was originally 24. I want some the DPS to be a bit higher than the Vilethorn
             item.magic = true;
-            item.mana = 7; //Increased from 3 to 7
+            item.mana = 5; //Increased from 3 to 5
             item.melee = false;
             item.width = 28;
             item.height = 30;

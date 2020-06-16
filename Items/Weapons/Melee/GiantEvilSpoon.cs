@@ -15,7 +15,7 @@ namespace WorldOfMeat.Items.Weapons.Melee
 
         public override void SetDefaults()
         {
-            item.damage = 58;
+            item.damage = 62;
             item.melee = true;
             item.autoReuse = false;
             item.width = 90;
