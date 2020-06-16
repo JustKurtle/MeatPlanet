@@ -5,20 +5,16 @@ using Terraria.ModLoader;
 
 namespace WorldOfMeat.Items.Armor
 {
-	[AutoloadEquip(EquipType.Head)]
-	public class HeadBrick : ModItem
-	{
-		public override void SetDefaults()
-        {
-			item.width = 20;
-			item.height = 10;
-			item.rare = 1;
-			item.vanity = true;
-		}
-
-		public override bool DrawHead()
-        {
-			return false;
-		}
-	}
+  [AutoloadEquip(EquipType.Head)]
+  public class HeadBrick : ModItem
+  {
+    public override void SetDefaults()
+    {
+      item.width = 20;
+      item.height = 10;
+      item.rare = 1;
+      item.vanity = true;
+    }
+    public override bool DrawHead() { return false; }
+  }
 }
