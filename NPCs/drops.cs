@@ -19,40 +19,30 @@ namespace WorldOfMeat.NPCs
 
       if (Main.expertMode)
       {
-        if (Main.rand.Next(10) <= 6/29/18)
+        if (Main.rand.Next(10) <= 6/29/18 && npc.type == NPCID.BrainofCthulhu)
         {
-          if (npc.type == NPCID.BrainofCthulhu)
-          {
-            Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BloodyToothBrush"));
-          }
+          Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BloodyToothBrush"));
         }
-        if (Main.rand.Next(4) <= 1)
+        if (Main.rand.Next(4) <= 1 && npc.type == NPCID.WallofFlesh)
         {
-          if (npc.type == NPCID.WallofFlesh)
-          {
-            Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TheFinger"));
-          }
+          Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("TheFinger"));
         }
-        if (Main.rand.Next(3) <= 1)
+        if (Main.rand.Next(3) <= 1 && npc.type == NPCID.KingSlime)
         {
-          if (npc.type == NPCID.KingSlime)
-          {
-            Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Toaster"));
-          }
+          Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Toaster"));
         }
       }
 
       if (Main.hardMode) //.5% from prehardmode bats, 1% from hardmode bats, 2% from lava bats and vampires
       {
-        if ((Main.rand.Next(50) <= 1 && npc.type == NPCID.Lavabat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.Hellbat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.CaveBat) ||
+        if ((Main.rand.Next(200) <= 1 && (npc.type == NPCID.Hellbat ||
+                                          npc.type == NPCID.CaveBat ||
+                                          npc.type == NPCID.IlluminantBat ||
+                                          npc.type == NPCID.IceBat ||
+                                          npc.type == NPCID.JungleBat)) ||
             (Main.rand.Next(100) <= 1 && npc.type == NPCID.GiantBat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IlluminantBat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IceBat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.JungleBat) ||
-            (Main.rand.Next(200) <= 1 && npc.type == NPCID.IceBat) ||
-            (Main.rand.Next(50) <= 1 && npc.type == NPCID.Vampire))
+            (Main.rand.Next(50) <= 1 && (npc.type == NPCID.Lavabat ||
+                                         npc.type == NPCID.Vampire)))
         {
           Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("BatLauncher"));
         }
