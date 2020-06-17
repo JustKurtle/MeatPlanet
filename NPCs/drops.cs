@@ -14,7 +14,7 @@ namespace WorldOfMeat.NPCs
           npc.type == NPCID.Demolitionist ||
           npc.type == NPCID.Guide)
       {
-        Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"), Main.rand.Next(2)+1);
+        Terraria.Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("Skin"), Main.rand.Next(2) + 1);
       }
 
       if (Main.expertMode)
